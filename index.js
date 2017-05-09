@@ -1,10 +1,10 @@
 const http = require('http');
 const port = 3001;
 
-var date1 = require('./date')
-var date2 = require('./date')
-
 const requestHandler = (request, response) => {
+  var date1 = require('./date')
+  var date2 = require('./date')
+
   response.end(date1.date + '\n' + date2.date)
 }
 
